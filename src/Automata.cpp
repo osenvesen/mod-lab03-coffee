@@ -1,6 +1,5 @@
-#include "Automata.h"
 #include <iostream>
-
+#include "Automata.h"
 Automata::Automata() {
 cash = 0;
 menu[0] = "Tea";
