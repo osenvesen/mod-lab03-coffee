@@ -1,6 +1,7 @@
+// Copyright 2024 osenvesen
 // Automata.h
-#ifndef AUTOMATA_H
-#define AUTOMATA_H
+#ifndef INCLUDE_AUTOMATA_H_
+#define INCLUDE_AUTOMATA_H_
 
 #include <string>
 
@@ -8,12 +9,14 @@ enum STATES {OFF, WAIT, ACCEPT, COOK};
 
 class Automata {
 private:
+
 int cash;
 std::string menu[3];
 int prices[3];
 STATES state;
 
 public:
+
 Automata();
 void on();
 void off();
@@ -27,4 +30,4 @@ void cook();
 void finish();
 };
 
-#endif
+#endif  // INCLUDE_AUTOMATA_H_
