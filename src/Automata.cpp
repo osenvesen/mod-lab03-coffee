@@ -3,9 +3,7 @@
 #include "Automata.h"
 Automata::Automata() {
 cash = 0;
-menu[0] = "Tea";
-menu[1] = "Coffee";
-menu[2] = "Milk";
+menu = { "Tea", "Coffee", "Milk" };  
 prices[0] = 10;
 prices[1] = 15;
 prices[2] = 20;
@@ -38,7 +36,7 @@ void Automata::getMenu() {
 if (state == WAIT) {
 std::cout << "Menu:\n";
 for (int i = 0; i < 3; i++) {
-std::cout << i+1 << ". " << menu[i] << " - " << prices[i] << " rubles.\n";
+std::cout << i+1 << ". " << menu << " - " << prices[i] << " rubles.\n";
 }
 std::cout << "Choose a drink.\n";
 }
