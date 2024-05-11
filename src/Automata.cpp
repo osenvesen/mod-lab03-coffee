@@ -33,13 +33,7 @@ std::cout << "Cash: " << cash << " rubles.\n";
 }
 
 std::vector<std::string> Automata::getMenu() {
-if (state == WAIT) {
-std::cout << "Menu:\n";
-for (int i = 0; i < 3; i++) {
-std::cout << i+1 << ". " << menu << " - " << prices[i] << " rubles.\n";
-}
-std::cout << "Choose a drink.\n";
-}
+return menu;
 }
 
 STATES Automata::getState() {
