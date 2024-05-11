@@ -3,7 +3,7 @@
 #include "Automata.h"
 Automata::Automata() {
 cash = 0;
-menu = { "Tea", "Coffee", "Milk" }; 
+menu = { "Tea", "Coffee", "Milk" };
 prices[0] = 10;
 prices[1] = 15;
 prices[2] = 20;
