@@ -14,14 +14,14 @@ state = OFF;
 void Automata::on() {
 if (state == OFF) {
 state = WAIT;
-std::cout « "Automata is turned on.\n";
+std::cout << "Automata is turned on.\n";
 }
 }
 
 void Automata::off() {
 if (state == WAIT || state == OFF) {
 state = OFF;
-std::cout « "Automata is turned off.\n";
+std::cout << "Automata is turned off.\n";
 }
 }
 
@@ -29,17 +29,17 @@ void Automata::coin(int sum) {
 if (state == ACCEPT || state == WAIT) {
 cash += sum;
 state = ACCEPT;
-std::cout « "Cash: " « cash « " rubles.\n";
+std::cout << "Cash: " << cash << " rubles.\n";
 }
 }
 
 void Automata::getMenu() {
 if (state == WAIT) {
-std::cout « "Menu:\n";
+std::cout << "Menu:\n";
 for (int i = 0; i < 3; i++) {
-std::cout « i+1 « ". " « menu[i] « " - " « prices[i] « " rubles.\n";
+std::cout « i+1 << ". " « menu[i] << " - " << prices[i] << " rubles.\n";
 }
-std::cout « "Choose a drink.\n";
+std::cout << "Choose a drink.\n";
 }
 }
 
@@ -55,7 +55,7 @@ if (check(cost)) {
 state = COOK;
 cook();
 } else {
-std::cout « "Not enough cash.\n";
+std::cout << "Not enough cash.\n";
 }
 }
 }
@@ -73,14 +73,14 @@ void Automata::cancel() {
 if (state == ACCEPT) {
 cash = 0;
 state = WAIT;
-std::cout « "Canceled.\n";
+std::cout << "Canceled.\n";
 }
 }
 
 void Automata::cook() {
 if (state == COOK) {
-std::cout « "Cooking...\n";
-std::cout « "Done! Enjoy your drink!\n";
+std::cout << "Cooking...\n";
+std::cout << "Done! Enjoy your drink!\n";
 state = WAIT;
 }
 }
@@ -88,6 +88,6 @@ state = WAIT;
 void Automata::finish() {
 if (state == WAIT) {
 cash = 0;
-std::cout « "Finished.\n";
+std::cout << "Finished.\n";
 }
 }
