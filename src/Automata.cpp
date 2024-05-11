@@ -37,7 +37,7 @@ void Automata::getMenu() {
 if (state == WAIT) {
 std::cout << "Menu:\n";
 for (int i = 0; i < 3; i++) {
-std::cout « i+1 << ". " « menu[i] << " - " << prices[i] << " rubles.\n";
+std::cout << i+1 << ". " << menu[i] << " - " << prices[i] << " rubles.\n";
 }
 std::cout << "Choose a drink.\n";
 }
