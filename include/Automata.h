@@ -10,7 +10,7 @@ enum STATES {OFF, WAIT, ACCEPT, COOK};
 class Automata {
  private:
 int cash;
-const char*string menu[3];
+std::vector<std::string> menu;
 int prices[3];
 STATES state;
 
