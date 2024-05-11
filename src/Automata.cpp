@@ -1,3 +1,4 @@
+// Copyright 2024 osenvesen
 #include <iostream>
 #include "Automata.h"
 Automata::Automata() {
