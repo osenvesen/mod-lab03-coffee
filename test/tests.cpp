@@ -49,7 +49,6 @@ vendingMachine.finish();
 assert(vendingMachine.getState() == WAIT);
 }
 
-int main() {
+void main() {
 testAutomata();
-return 0;
 }
